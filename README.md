@@ -1,4 +1,4 @@
-# Cotizador Dólar App [![Visítala](https://cotizador-dolar.netlify.app/)]
+# Cotizador Dólar App [Visítala](https://cotizador-dolar.netlify.app/)
 
 Aplicación web para cotizar el valor del Dólar entre rangos de fechas.
 
