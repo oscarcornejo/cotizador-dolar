@@ -1,6 +1,22 @@
-# Cotizador Dólar App [Visítala](https://cotizador-dolar.netlify.app/)
+# Cotizador Dólar App - [Visítala](https://cotizador-dolar.netlify.app/)
 
 Aplicación web para cotizar el valor del Dólar entre rangos de fechas.
+
+## Tecnologías utilizadas
+
+Este proyecto ocupa las siguientes herramientas:
+- ReactJs
+- Redux
+- React Redux
+- Redux Thunk
+- React Apexcharts
+- Apexcharts
+- Axios
+- Moment
+- React Modern Calendar Datepicker
+- node-sass
+- Styled Components
+- tailwindcss
 
 ## Descargar Proyecto
 
