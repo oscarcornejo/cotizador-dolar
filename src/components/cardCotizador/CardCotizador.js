@@ -48,9 +48,9 @@ const CardCotizador = () => {
         const getDolarDay = async () => {
             await API.get(`/dolar?apikey=${apiKey}&formato=json`)
             .then( resp => {
-                // console.log(resp);
+                // console.log(resp.data.Dolares[0]);
                 if(resp.status === 200){
-                    dispatch(setValorActual(resp.data.Dolares, 'diaActual'));
+                    dispatch(setValorActual(resp.data.Dolares[0], 'diaActual'));
                 }
             }).catch( err => {
                 console.log('Respuesta Api Día Actual:: ', err.response.data.Mensaje);

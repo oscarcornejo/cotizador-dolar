@@ -20,8 +20,7 @@ const CardInformacion = () => {
 
                         <div className="hidden lg:flex">
                             <button type="button" className="appearance-none py-4 text-indigo-500 border-b border-indigo-500 mr-6">
-                                {
-                                    tipo === 'diaActual' ? `Valor Dólar Actual $${parseFloat(valor.Valor)} CLP`
+                                { tipo === 'diaActual' ? `Valor Dólar Actual $${parseFloat(valor.Valor)} CLP`
                                     : `Última Actualiación Dólar: $${parseFloat(valor.Valor)} CLP`
                                 }
                             </button>
@@ -33,13 +32,12 @@ const CardInformacion = () => {
                     <div className="flex-grow flex-no-shrink py-6">
                         <div className="text-gray-600 mb-2">
                             <span className="text-3xl align-top">CLP$</span>
-                            { selectState === 'valorMinimo' && <span className="text-5xl">800</span>}     
-                            { selectState === 'valorMaximo' && <span className="text-5xl">801</span>}     
-                            { selectState === 'valorPromedio' && <span className="text-5xl">802</span>}
+                            { selectState === 'valorPromedio' && <span className="text-5xl">{estadisticas.promedio}</span>}
+                            { selectState === 'valorMinimo' && <span className="text-5xl">{estadisticas.valorMin}</span>}     
+                            { selectState === 'valorMaximo' && <span className="text-5xl">{estadisticas.valorMax}</span>}     
                         </div>
                         <div className="text-gray-600 text-sm">
-                            {
-                                tipo === 'diaActual' ? `Valor Dólar Actual $${valor.Valor} CLP`
+                            { tipo === 'diaActual' ? `Valor Dólar Actual $${valor.Valor} CLP`
                                 : `Última Actualiación Dólar: $${parseFloat(valor.Valor)} CLP`
                             }
                         </div>
